@@ -3350,7 +3350,7 @@ img {
   overflow: hidden;
 }
 .text-highlight {
-  color: #5688c9;
+  color: #08A7DE;
 }
 .text-emphasis {
   font-style: italic;
@@ -3532,6 +3532,7 @@ input[type="search"] {
 .page-title .page-title-main {
   font-size: 34px;
   line-height: 34px;
+  color: white;
 }
 .page-title.page-title-margin {
   margin-top: 40px;
@@ -3545,7 +3546,7 @@ input[type="search"] {
 .section-title .text-highlight {
   display: block;
   font-size: 50px;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 .section-title-simple {
   font-size: 30px;
@@ -3802,7 +3803,7 @@ TABLE OF CONTENT
 .top-info {
   padding-top: 8px;
   padding-bottom: 10px;
-  background: #1b253b;
+  background: transparent;
 }
 .top-info__text {
   color: #7d8e98;
@@ -3813,7 +3814,8 @@ TABLE OF CONTENT
 }
 .main-nav {
   height: 85px;
-  background: #212c43;
+  /*background: #212c43;*/
+  background: #458EDA;
 }
 .logo {
   padding-top: 22px;
@@ -4603,8 +4605,9 @@ a.custom-tooltip:hover {
   box-shadow: inset 0 5px 0 rgba(232, 232, 221, 0.2);
 }
 .home-title-wrapper {
-  background-color: #1ba1f1;
-  background: url(../images/page_title/home-photo.jpg) repeat-x center 0;
+  /*background-color: #1ba1f1;*/
+  /*background: url(../images/page_title/home-photo.jpg) repeat-x center 0;*/
+  background: linear-gradient(320.33deg, rgba(0, 228, 203, 0) -8.96%, #458EDA 49.04%);
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -6021,7 +6024,7 @@ a.custom-tooltip:hover {
 }
 .support .section-title .text-highlight {
   font-size: 50px;
-  color: #f29090;
+  color: #08A7DE;
 }
 .support .support__text {
   margin-bottom: 34px;
@@ -6795,22 +6798,23 @@ a.custom-tooltip:hover {
   text-align: center;
 }
 .home-title-wrapper .page-title-main {
-  margin-top: 131px;
+  margin-top: 75px;
   margin-bottom: 15px;
-  font-family: "Oswald", sans-serif;
-  font-size: 50px;
-  line-height: 52px;
-  color: #162a43;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 45px;
+  line-height: 56px;
+  color: white;
   text-transform: uppercase;
-  text-shadow: 0 1px 0 #dfe5e0;
+  /*text-shadow: 0 1px 0 #dfe5e0;*/
 }
 .home-title-wrapper .page-title-secondary {
   margin-top: 0;
   margin-bottom: 52px;
   font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
   line-height: 22px;
   color: #fff;
-  text-shadow: 0 2px 0 rgba(33, 44, 67, 0.2);
+  /*text-shadow: 0 2px 0 rgba(33, 44, 67, 0.2);*/
 }
 .home-title-wrapper .decorative-lines {
   display: none;
@@ -7234,7 +7238,7 @@ a.custom-tooltip:hover {
 .section-title--smaller .text-highlight {
   font-size: 40px;
   color: #5688c9;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 .section-title.section-title--light {
   font-size: 20px;
@@ -9045,13 +9049,23 @@ a.custom-tooltip:hover {
   .home-title-wrapper .page-title-main {
     margin-top: 125px;
     margin-bottom: 32px;
-    font-size: 78px;
-    line-height: 78px;
+    font-size: 50px;
+    line-height: 65px;
+    color: white;
+    float: left;
+    text-align: -webkit-left;
+    font-family: "Open Sans",  sans-serif;
+    font-style: normal;
+    font-weight: bold;
   }
   .home-title-wrapper .page-title-secondary {
     margin-bottom: 35px;
     font-size: 24px;
     line-height: 24px;
+    float: left;
+    /*margin-top: 22%;*/
+    /*margin-left: -27%;*/
+    text-align: -webkit-left;
   }
   .home-title-wrapper .btn {
     display: none;

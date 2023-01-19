@@ -1,0 +1,817 @@
+.read-more, .read-less {
+    cursor: pointer;
+    color: #08A7DE;
+}
+.label-default {
+    font-size: 16px !important;
+}
+
+@import "compass/css3";
+@import url(https://fonts.googleapis.com/css?family=Varela+Round );
+
+/*//Mixins*/
+@mixin rel-left{
+    position:relative; float:left;
+}
+@mixin font-size($sizeValue: 1.4){
+    font-size:($sizeValue * 10) + px;
+    font-size: $sizeValue + rem;
+}
+@mixin breakpoint($point){
+    @if $point == large{
+        @media (min-width:768px){@content;}
+    }
+    @else if $point == small{
+        @media (max-width:767px){@content;}
+    }
+}
+
+/*//Variables*/
+$footHeight : 60px;
+$white : #ffffff;
+$lightGray : #e5e5e5;
+$gray : #ccc;
+$midGray : #666;
+$black : #282828;
+$highlight : #55acee;
+$link : #e76043;
+$error : #a74734;
+
+//Site Styling
+  *, *:before, *:after{
+      -moz-box-sizing:border-box;
+      -webkit-box-sizing:border-box;
+      box-sizing:border-box;
+  }
+img {
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+
+html, body{
+    height:100%;
+}
+.body{
+    font-size:62.5%;
+    font-family:'varela round', sans-serif;
+    box-sizing:border-box;
+    background:#333;
+    padding:0; margin:0;
+}
+.wrap{
+    max-width:1280px; min-height:100%;
+    height:auto !important;
+    position:relative;
+    margin-top:0; margin-right:auto; margin-bottom:-$footHeight; margin-left:auto;
+
+.push{
+    padding:0 0 $footHeight 0;
+}
+}
+.intro{
+    width:50%;
+    position:relative;
+    margin:0 auto; padding:20px 0;
+h1{
+    color:white;
+    text-align:center;
+@include font-size(2.0);
+}
+p{
+    color:white;
+    line-height:1.6;
+@include font-size(1.0);
+}
+}
+.footer{
+    width:100%; height:$footHeight;
+    position:relative; float:left;
+    background:$black;
+a{
+    border-bottom:none;
+@include transition(border 0.5s ease-in-out);
+&:hover{
+     border-bottom:1px solid white;
+ }
+}
+p{
+    color:white;
+    text-align:center;
+    padding:10px;
+@include font-size(0.7);
+}
+}
+
+/*// Plugin Styling*/
+   a{
+       color:$link;
+       /*border-bottom:2px solid white;*/
+       text-decoration:none;
+   @include transition(all 0.3s ease-in-out);
+&:hover{
+     text-decoration:none;
+     border-bottom:2px solid $lightGray;
+ }
+}
+.mAccord{
+    width:100%;
+    position:relative;
+    margin:0 auto 20px; padding:0;
+    display:table;
+    list-style-type:none;
+}
+.title{
+    background:$highlight;
+    color:white;
+    padding:8px;
+    font-weight:normal;
+    text-transform:uppercase;
+@include font-size(1.4);
+}
+.maTrigger{
+    width:100%;
+    margin:0; padding:10px;
+    font-size:1.8em; font-weight:normal;
+    line-height:1.2;
+@include rel-left;
+@include transition(all 0.3s ease-in-out);
+&:hover{
+     cursor:pointer;
+     background:$gray;
+.fa{color:$midGray;}
+}
+&.active{
+&:hover{
+     background:$lightGray;
+ }
+.fa{
+    color:$error;
+@include transform(rotate(45deg));
+}
+}
+
+.fa{
+    color:#ccc;
+    position:absolute; top:0; right:10px; bottom:0;
+    height:20px;
+    margin:auto;
+@include transition(all 0.3s ease-in-out);
+}
+}
+
+.maContent{
+    color:#e5e5e5;
+    overflow:hidden;
+    background:$white;
+    width:100%;
+    border:1px solid $lightGray;
+    padding:4px 10px;
+    line-height:1.8;
+    display:none;
+    color:$black;
+@include rel-left;
+&:after{
+     content:'';
+     position:absolute; left:10%; bottom:0%;
+     width:80%; height:40%;
+     z-index:-1;
+ @include border-radius(50%);
+ @include box-shadow(0 7px 16px rgba(0,0,0,0.4));
+ }
+.full{
+    width:100%;
+@include rel-left;
+label{
+    font-size:12px;
+    width:100%;
+@include rel-left;
+}
+.roArea{
+    width:100%;
+    font-size:14px;
+    background:$lightGray;
+    border:1px solid $gray;
+    color:$black;
+    padding:6px; margin-bottom:12px;
+    line-height:20px;
+@include rel-left;
+}
+}
+.a-linkRow{
+    width:100%;
+    position:relative; float:left;
+a{
+    position:relative; float:left;
+    margin-right:8px;
+    font-size:16px;
+&:hover{
+.fa{
+    color:$link;
+}
+}
+.fa{
+    margin-right:4px;
+    color:$gray;
+@include transition(all 0.3s ease-in-out);
+}
+}
+}
+.a-imgContain{
+    position:relative; float:left;
+    width:100%;
+}
+.a-img{
+    display: table;
+    margin: 8px auto; padding: 1.6em;
+    background-color: rgba(40,40,40,0.1);
+    position:relative;
+    z-index:10;
+@include border-radius(50%);
+@include box-shadow(0 0 6px rgba(0,0,0,0.3) inset, 0 0 1px rgba(0,0,0,0.4) inset);
+span{
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+@include border-radius(50%);
+@include box-shadow(0px 2px 5px rgba(0, 0, 0, 0.4));
+img{
+    max-width:150px;
+}
+}
+}
+}
+@media (min-width: 280px) and (max-width: 500px) {
+
+    .backgroundChange {
+        background: #E9F7FC;
+    }
+    .videoButton {
+        background: transparent;
+        border: 0;
+        display: block;
+        cursor: pointer;
+        width: 50%;
+        float: left;
+        margin-top: 2%;
+        margin-left: 3%;
+    }
+
+    .documentationButton {
+        position: absolute;
+        display: inline-block;
+        padding: 1em 2em;
+        border: 0;
+        border-radius: 39px;
+        text-align: center;
+        white-space: nowrap;
+        cursor: pointer;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        background: #8BC34A;
+        margin-left: -16%;
+        width: 50%;
+        float: right;
+    }
+
+    .frameworkTextDivAlign {
+        height: 149px;
+        border-bottom: 2px solid #E1BEE7;
+        text-align-last: center;
+    }
+
+    .frameworkPAlign {
+        position: absolute;
+        height: 131px;
+        top: calc(50% - 131px / 2 - 19.5px);
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 43px;
+        line-height: 131px;
+        color: #08A7DE;
+        padding-left: 1.5rem;
+    }
+
+    .moquiPAlign {
+        position: absolute;
+        height: 87px;
+        left: 28.02%;
+        right: 21.18%;
+        top: calc(20% - 87px / 2 + 83.5px);
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 39px;
+        line-height: 87px;
+        color: rgba(0, 0, 0, 0.54);
+    }
+
+    .actifactTextDivAlign {
+        height: 149px;
+        border-bottom: 2px solid #E1BEE7;
+        text-align-last: center;
+    }
+
+    .artifactPAlign {
+        position: absolute;
+        height: 131px;
+        top: calc(50% - 131px / 2 - 19.5px);
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 43px;
+        line-height: 131px;
+        color: #08A7DE;
+        padding-left: 3rem;
+    }
+
+    .mantlePAlign {
+        position: absolute;
+        height: 87px;
+        left: 28.02%;
+        right: 21.18%;
+        top: calc(20% - 87px / 2 + 83.5px);
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 39px;
+        line-height: 87px;
+        color: rgba(0, 0, 0, 0.54);
+    }
+
+    .applicationDivAlign {
+        height: 149px;
+        text-align-last: center;
+    }
+
+    .applicationPAlign {
+        position: absolute;
+        height: 131px;
+        top: calc(50% - 131px / 2 - 19.5px);
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 43px;
+        line-height: 131px;
+        color: #08A7DE;
+    }
+
+    .featureDivAlign {
+        text-align-last: center;
+    }
+
+    .moquiTextAlign {
+        margin-top: 7rem;
+        margin-left: 13%;
+    }
+
+    .appsPAlign {
+        position: absolute;
+        height: 87px;
+        left: 28.02%;
+        right: 21.18%;
+        top: calc(20% - 87px / 2 + 83.5px);
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 39px;
+        line-height: 87px;
+        color: rgba(0, 0, 0, 0.54);
+    }
+
+    .benefitsPAlign {
+        /*width: 0;
+        height: 0;
+        margin: .5em;
+        opacity: 0;
+        border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #08A7DE;
+        border-style: solid;
+        border-width: 0 0.5rem 1rem;
+        transform: rotate(90deg);*/
+        display: none;
+    }
+
+    .endUserPAlign {
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+        margin-bottom: 10%;
+    }
+
+    .commercialContainerPAlign {
+        /*width: 0;
+        height: 0;
+        opacity: 0;
+        margin: .5em;
+        border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #08A7DE;
+        border-style: solid;
+        border-width: 0 0.5rem 1rem;
+        transform: rotate(90deg);*/
+        display: none;
+    }
+
+    .commericalPAlign {
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+    }
+
+    .customSoftwareContainerPAlign {
+        /*width: 0;
+        height: 0;
+        margin: .5em;
+        opacity: 0;
+        border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #08A7DE;
+        border-style: solid;
+        border-width: 0 0.5rem 1rem;
+        transform: rotate(90deg);*/
+        display: none;
+    }
+
+    .customSoftwarePAlign {
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+    }
+
+    .developersContainerPAlign {
+        /*width: 0;
+        height: 0;
+        margin: .5em;
+        opacity: 0;
+        border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #08A7DE;
+        border-style: solid;
+        border-width: 0 0.5rem 1rem;
+        transform: rotate(90deg);*/
+        display: none;
+    }
+
+    .developersPAlign {
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+    }
+
+    .illustrationAlign {
+        margin-top: 100%;
+        opacity: 0%;
+    }
+
+
+    .videoDocumentAlign {
+        margin-left: -17.5%;
+        margin-top: -180%;
+    }
+
+    .ecosystemFeaturesImageAlign {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .latestReleaseHeadingAlign {
+        color: rgba(0, 0, 0, 0.54);
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 34px !important;
+        line-height: 100% !important;
+        text-align: center;
+    }
+
+    .sourceForceAlign {
+        margin: 1rem;
+        margin-top: 5%;
+        width: 40%
+    }
+
+    .githubLogoAlign {
+        width: 30%
+    }
+
+    .decorationImageAlign {
+        margin: 1rem;
+        margin-left: 32%;
+        width: 64%
+    }
+
+    .accordion_head {
+        background-color: #8BC34A;
+        color: #fff;
+        font-size: 27px;
+        padding: 12px 25px;
+        border-radius: 5px;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .resourceModelTextAlign {
+        color: #08A7DE;
+        font-weight: 600;
+        font-size: 32px !important;
+        text-align: center;
+        padding: 12px 25px;
+        border-radius: 5px;
+        font-family: 'Open Sans', sans-serif
+    }
+
+    .modelTextAlign {
+        font-family: 'Open Sans', sans-serif;
+        /*border: solid;*/
+        /*border-radius: 10px;*/
+        /*background: lightblue;*/
+    }
+
+    .chevronIconAlign {
+        color: #08A7DE;
+        float: right;
+    }
+
+    .codeReviewChevronAlign {
+        color: #08A7DE;
+        float: right;
+    }
+
+    .benefitsChevronAlign {
+        color: #08A7DE;
+        float: right;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .videoButton {
+        background: transparent;
+        border: 0;
+        display: block;
+        cursor: pointer;
+    }
+
+    .documentationButton {
+        position: absolute;
+        display: inline-block;
+        padding: 1em 2em;
+        border: 0;
+        border-radius: 39px;
+        text-align: center;
+        white-space: nowrap;
+        cursor: pointer;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        background: #8BC34A;
+        margin-left: -37%;
+    }
+
+    .frameworkTextDivAlign {
+        height: 149px;
+        border-right: 2px solid #E1BEE7;
+    }
+
+    .frameworkPAlign {
+        position: absolute;
+        height: 131px;
+        top: calc(50% - 131px / 2 - 19.5px);
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 5rem;
+        line-height: 131px;
+        color: #08A7DE;
+    }
+
+    .moquiPAlign {
+        position: absolute;
+        height: 87px;
+        left: 28.02%;
+        right: 21.18%;
+        top: calc(20% - 87px / 2 + 83.5px);
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 4rem;
+        line-height: 87px;
+        color: rgba(0, 0, 0, 0.54);
+    }
+
+    .actifactTextDivAlign {
+        height: 149px;
+    }
+
+    .artifactPAlign {
+        position: absolute;
+        height: 131px;
+        top: calc(50% - 131px / 2 - 19.5px);
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 47px;
+        line-height: 131px;
+        color: #08A7DE;
+        padding-left: 4rem;
+    }
+
+    .mantlePAlign {
+        position: absolute;
+        height: 87px;
+        left: 28.02%;
+        right: 21.18%;
+        top: calc(20% - 87px / 2 + 83.5px);
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 4rem;
+        line-height: 87px;
+        color: rgba(0, 0, 0, 0.54);
+    }
+
+    .applicationDivAlign {
+        height: 149px;
+        border-left: 2px solid #E1BEE7;
+    }
+
+    .applicationPAlign {
+        position: absolute;
+        height: 131px;
+        top: calc(50% - 131px / 2 - 19.5px);
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 5rem;
+        line-height: 131px;
+        text-align: center;
+        color: #08A7DE;
+    }
+
+    .moquiTextAlign {
+        margin-top: 20rem;
+    }
+
+    .appsPAlign {
+        position: absolute;
+        height: 87px;
+        left: 28.02%;
+        right: 21.18%;
+        top: calc(20% - 87px / 2 + 83.5px);
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 4rem;
+        line-height: 87px;
+        color: rgba(0, 0, 0, 0.54);
+    }
+
+    .benefitsPAlign {
+        width: 0;
+        height: 0;
+        margin: .5em;
+        border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #08A7DE;
+        border-style: solid;
+        border-width: 0 0.5rem 1rem;
+        transform: rotate(90deg);
+    }
+
+    .endUserPAlign {
+        font-size: 22px;
+        letter-spacing: 1px;
+        font-family: 'Open Sans', sans-serif;
+        margin-left: -5%;
+    }
+
+    .githubLogoAlign {
+        width: 20%
+    }
+
+    .commercialContainerPAlign {
+        width: 0;
+        height: 0;
+        margin: .5em;
+        border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #08A7DE;
+        border-style: solid;
+        border-width: 0 0.5rem 1rem;
+        transform: rotate(90deg);
+    }
+
+    .commericalPAlign {
+        font-size: 22px;
+        letter-spacing: 1px;
+        font-family: 'Open Sans', sans-serif;
+        margin-left: -5%;
+    }
+
+    .customSoftwareContainerPAlign {
+        width: 0;
+        height: 0;
+        margin: .5em;
+        border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #08A7DE;
+        border-style: solid;
+        border-width: 0 0.5rem 1rem;
+        transform: rotate(90deg);
+    }
+
+    .customSoftwarePAlign {
+        font-size: 22px;
+        letter-spacing: 1px;
+        font-family: 'Open Sans', sans-serif;
+        margin-left: -5%
+    }
+
+    .developersContainerPAlign {
+        width: 0;
+        height: 0;
+        margin: .5em;
+        border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #08A7DE;
+        border-style: solid;
+        border-width: 0 0.5rem 1rem;
+        transform: rotate(90deg);
+    }
+
+    .developersPAlign {
+        font-size: 22px;
+        letter-spacing: 1px;
+        font-family: 'Open Sans', sans-serif;
+        margin-left: -5%
+    }
+
+    .illustrationAlign {
+        margin-top: 4%
+    }
+
+    .videoDocumentAlign {
+        margin-left: -4.5%; margin-top: -5%
+    }
+
+    .ecosystemFeaturesImageAlign {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 45%;
+    }
+
+    .latestReleaseHeadingAlign {
+        color: rgba(0, 0, 0, 0.54);
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 100%
+    }
+
+    .sourceForceAlign {
+        margin: 1rem;
+        margin-top: 6%;
+        width: 20%
+    }
+
+    .decorationImageAlign {
+        margin: 1rem;
+        margin-left: 7%;
+        width: 33%
+    }
+
+    .accordion_head {
+        background-color: #8BC34A;
+        color: #fff;
+        font-size: 24px;
+        padding: 12px 25px;
+        border-radius: 5px;
+        font-stretch: normal;
+        line-height: normal;
+    }
+
+    .resourceModelTextAlign {
+        color: black;
+        font-size: 32px;
+        padding: 12px 25px;
+        border-radius: 5px;
+        font-stretch: normal;
+        line-height: normal;
+        font-family: 'Open Sans', sans-serif
+    }
+
+    .modelTextAlign {
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .chevronIconAlign {
+        color: #08A7DE;
+        float: right;
+    }
+
+    .codeReviewChevronAlign {
+        color: #08A7DE;
+        float: right;
+    }
+
+    .benefitsChevronAlign {
+        color: #08A7DE;
+        float: right;
+    }
+
+    .backgroundChange {
+        background: white;
+    }
+}

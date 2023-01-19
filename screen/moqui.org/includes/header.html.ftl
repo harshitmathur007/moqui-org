@@ -16,6 +16,7 @@
     <link href="/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
     <link href="/libs/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <link href="/css/style_blue.css" rel="stylesheet">
+    <link href="/css/open_source.css" rel="stylesheet">
 
     <script src="/libs/jquery/jquery.min.js"></script>                <!--Script jQuery-->
     <script src="/external/jquery/jquery-migrate-1.2.1.min.js"></script>			<!--Script jQuery for old version jQuery-->
@@ -91,7 +92,7 @@
                 <#-- <div class="divider-circle"></div> -->
             </div>
             <div class="top-info">
-                <div class="container">
+                <#--<div class="container">
                     <p class="top-info__text pull-left hidden-xs small">
                         <a href="https://demo.moqui.org/qapps" target="_blank">Try the applications demo!</a>
                         <a href="https://demo.moqui.org/store" target="_blank">Try POP Shop eCommerce!</a>
@@ -99,7 +100,7 @@
                     <p class="top-info__text pull-right small">
                         Comments? Questions? Get Involved? <a href="/docs/moqui/Community+Guide" target="_blank">Community Guide</a>
                     </p>
-                </div>
+                </div>-->
             </div>
         </div>
     </header>
