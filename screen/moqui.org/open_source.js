@@ -17,7 +17,6 @@ $(document).ready( function () {
             initialContent[index]=$(this).html();
         }
         $(this).html(initialContent[index]+readMore);
-        //console.log(initialContent[0]);
 
     });
     $(document).on('click','.read-more',function(){

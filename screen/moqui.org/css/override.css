@@ -5,7 +5,7 @@ h3 { margin-top: 20px; }
 .basic_html th, .basic_html td { padding: 2px 8px; border: #dddddf solid thin; }
 
 .presentation { height: 106px; background: #212c43; }
-.main-nav { height: 73px; /*background: #212c43;*/ /* opacity: 0.95; filter: alpha(opacity=95); */ }
+.main-nav { height: 73px; }
 .top-info { height: 36px; border-top: black solid 1px; }
 .logo { padding-top: 16px; }
 .logo-img { margin-bottom: 20px; }
@@ -17,14 +17,12 @@ ul#navigation a:hover, ul#navigation .active-item > a { color: #44b6fd; }
 #navigation-toggle { margin-top: 8px; }
 
 .home-title-wrapper {
-  /*background: url(/images/home-photo.jpg) repeat-x center 0;*/
   background: linear-gradient(353.33deg, rgba(0, 228, 224, 1) 2.04%, #458EDA 72.04%);
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
 .home-title-wrapper .page-title-secondary { text-shadow: none; }
-/*.home-title-wrapper .page-title-secondary span { display: inline-block; padding: 4px 12px 6px 12px; background: rgba(33, 44, 67, 0.1); border-radius: 8px; }*/
 /* use color instead of placeholder image for framework, mantle, etc */
 .services-title-wrapper { background-image: none; background-color: #437ac3; }
 .icon-circle--small { padding-top: 2px; }
