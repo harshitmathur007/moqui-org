@@ -468,20 +468,20 @@ function init_DecoratedSlider() {
 
     switch (true) {
 	  	case (displayWidth>1200):
-	   		decoratedSwiper.params.slidesPerView=4;
-        	decoratedSwiper.resizeFix();   
+	   		// decoratedSwiper.params.slidesPerView=4;
+        	// decoratedSwiper.resizeFix();
 	   	break;
 	  	case (displayWidth>640 && displayWidth<=1200):
-	   		decoratedSwiper.params.slidesPerView=3;
-         	decoratedSwiper.resizeFix();
+	   		// decoratedSwiper.params.slidesPerView=3;
+         	// decoratedSwiper.resizeFix();
 	   	break;
 	   	case (displayWidth>450 && displayWidth<=640):
-	   		decoratedSwiper.params.slidesPerView=2;
-         	decoratedSwiper.resizeFix();
+	   		// decoratedSwiper.params.slidesPerView=2;
+         	// decoratedSwiper.resizeFix();
 	   	break;
 	   	case (displayWidth<=450):
-	   		decoratedSwiper.params.slidesPerView=1;
-         	decoratedSwiper.resizeFix();
+	   		// decoratedSwiper.params.slidesPerView=1;
+         	// decoratedSwiper.resizeFix();
 	   	break;
 	}
 
@@ -491,20 +491,20 @@ function init_DecoratedSlider() {
 
 		switch (true) {
 		  	case (displayWidth>1200):
-		   		decoratedSwiper.params.slidesPerView=4;
-	        	decoratedSwiper.reInit();  
+		   		// decoratedSwiper.params.slidesPerView=4;
+	        	// decoratedSwiper.reInit();
 		   	break;
 		  	case (displayWidth>640 && displayWidth<=1200):
-		   		decoratedSwiper.params.slidesPerView=3;
-	         	decoratedSwiper.reInit();
+		   		// decoratedSwiper.params.slidesPerView=3;
+	         	// decoratedSwiper.reInit();
 		   	break;
 		   	case (displayWidth>450 && displayWidth<=640):
-		   		decoratedSwiper.params.slidesPerView=2;
-	         	decoratedSwiper.reInit();
+		   		// decoratedSwiper.params.slidesPerView=2;
+	         	// decoratedSwiper.reInit();
 		   	break;
 		   	case (displayWidth<=450):
-		   		decoratedSwiper.params.slidesPerView=1;
-	         	decoratedSwiper.reInit();
+		   		// decoratedSwiper.params.slidesPerView=1;
+	         	// decoratedSwiper.reInit();
 		   	break;
 		}
 	});

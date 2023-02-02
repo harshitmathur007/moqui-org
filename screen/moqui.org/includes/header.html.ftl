@@ -18,6 +18,9 @@
     <link href="/css/style_blue.css" rel="stylesheet">
     <link href="/css/open_source.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"/>
+
     <script src="/libs/jquery/jquery.min.js"></script>                <!--Script jQuery-->
     <script src="/external/jquery/jquery-migrate-1.2.1.min.js"></script>			<!--Script jQuery for old version jQuery-->
     <script src="/libs/twitter-bootstrap/js/bootstrap.min.js"></script>				<!--Bootstrap JavaScript-->
@@ -92,7 +95,7 @@
                 <#-- <div class="divider-circle"></div> -->
             </div>
             <div class="top-info">
-                <#--<div class="container">
+                <div class="container">
                     <p class="top-info__text pull-left hidden-xs small">
                         <a href="https://demo.moqui.org/qapps" target="_blank">Try the applications demo!</a>
                         <a href="https://demo.moqui.org/store" target="_blank">Try POP Shop eCommerce!</a>
@@ -100,7 +103,7 @@
                     <p class="top-info__text pull-right small">
                         Comments? Questions? Get Involved? <a href="/docs/moqui/Community+Guide" target="_blank">Community Guide</a>
                     </p>
-                </div>-->
+                </div>
             </div>
         </div>
     </header>
