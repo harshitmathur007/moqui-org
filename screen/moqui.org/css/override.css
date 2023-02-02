@@ -36,7 +36,7 @@ ul#navigation a:hover, ul#navigation .active-item > a { color: #44b6fd; }
 .moqui-logo { margin-top: 0px; height: 40px; }
 @media (min-width: 768px) {
   .presentation { height: 36px; background: #212c43; }
-  .main-nav.fixed-pos { top: 0px; }
+  .main-nav.fixed-pos { top: 0px; position: absolute;}
   .top-info { margin-top: 72px; }
   .circle-info__title { font-size: 26px; }
   .circle-button__title { font-size: 26px; }

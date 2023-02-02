@@ -6805,7 +6805,6 @@ a.custom-tooltip:hover {
   line-height: 56px;
   color: white;
   text-transform: uppercase;
-  /*text-shadow: 0 1px 0 #dfe5e0;*/
 }
 .home-title-wrapper .page-title-secondary {
   margin-top: 0;
@@ -6814,7 +6813,6 @@ a.custom-tooltip:hover {
   font-family: 'Open Sans', sans-serif;
   line-height: 22px;
   color: #fff;
-  /*text-shadow: 0 2px 0 rgba(33, 44, 67, 0.2);*/
 }
 .home-title-wrapper .decorative-lines {
   display: none;
@@ -9053,7 +9051,7 @@ a.custom-tooltip:hover {
     line-height: 65px;
     color: white;
     float: left;
-    text-align: -webkit-left;
+    text-align: left;
     font-family: "Open Sans",  sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -9063,9 +9061,7 @@ a.custom-tooltip:hover {
     font-size: 24px;
     line-height: 24px;
     float: left;
-    /*margin-top: 22%;*/
-    /*margin-left: -27%;*/
-    text-align: -webkit-left;
+    text-align: left;
   }
   .home-title-wrapper .btn {
     display: none;

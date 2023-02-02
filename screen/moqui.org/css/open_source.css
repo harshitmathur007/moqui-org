@@ -280,7 +280,7 @@ img{
         top: calc(50% - 131px / 2 - 19.5px);
         font-family: 'Open Sans', sans-serif;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 400;
         font-size: 43px;
         line-height: 131px;
         color: #08A7DE;
@@ -294,7 +294,7 @@ img{
         top: calc(20% - 87px / 2 + 83.5px);
         font-family: 'Open Sans', sans-serif;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 300;
         font-size: 39px;
         line-height: 87px;
         color: rgba(0, 0, 0, 0.54);
@@ -312,7 +312,7 @@ img{
         top: calc(50% - 131px / 2 - 19.5px);
         font-family: 'Open Sans', sans-serif;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 400;
         font-size: 43px;
         line-height: 131px;
         color: #08A7DE;
@@ -326,7 +326,7 @@ img{
         top: calc(20% - 87px / 2 + 83.5px);
         font-family: 'Open Sans', sans-serif;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 300;
         font-size: 39px;
         line-height: 87px;
         color: rgba(0, 0, 0, 0.54);
@@ -343,7 +343,7 @@ img{
         top: calc(50% - 131px / 2 - 19.5px);
         font-family: 'Open Sans', sans-serif;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 400;
         font-size: 43px;
         line-height: 131px;
         color: #08A7DE;
@@ -366,7 +366,7 @@ img{
         top: calc(20% - 87px / 2 + 83.5px);
         font-family: 'Open Sans', sans-serif;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 300;
         font-size: 39px;
         line-height: 87px;
         color: rgba(0, 0, 0, 0.54);
@@ -472,7 +472,7 @@ img{
 
     .resourceModelTextAlign {
         color: #08A7DE;
-        font-weight: 600;
+        font-weight: 400;
         font-size: 32px !important;
         text-align: center;
         padding: 12px 25px;
@@ -1359,7 +1359,7 @@ img{
         top: calc(50% - 131px / 2 - 19.5px);
         font-family: 'Open Sans', sans-serif;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 500;
         font-size: 42px;
         line-height: 131px;
         color: #08A7DE;
@@ -1390,7 +1390,7 @@ img{
         top: calc(50% - 131px / 2 - 19.5px);
         font-family: 'Open Sans', sans-serif;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 500;
         font-size: 42px;
         line-height: 131px;
         color: #08A7DE;
@@ -1422,7 +1422,7 @@ img{
         top: calc(50% - 131px / 2 - 19.5px);
         font-family: 'Open Sans', sans-serif;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 500;
         font-size: 42px;
         line-height: 131px;
         text-align: center;
@@ -1966,6 +1966,7 @@ img{
     width: 85%;
 }
 .cost-effective-img-div {
+    text-align: -moz-center;
     text-align: -webkit-center;
     margin-top: 5%
 }
@@ -1981,7 +1982,8 @@ img{
     font-size: 18px;
 }
 .carousel-img-card-div {
-    text-align: -webkit-center; margin-top: 5%
+    text-align: -moz-center; text-align: -webkit-center;
+    margin-top: 5%
 }
 .read-more-carousel {
     background: #08A7DE;
