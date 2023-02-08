@@ -252,6 +252,10 @@ img{
         background: #E9F7FC;
     }
 
+    .read-toggle {
+        background: white;
+    }
+
     .documentationButton {
         display: inline-block;
         padding: 1em 2em;
@@ -465,7 +469,7 @@ img{
         color: #fff;
         font-size: 27px;
         padding: 12px 25px;
-        border-radius: 5px;
+        border-radius: 18px 18px 0px 0px;
         line-height: normal;
         text-align: center;
     }
@@ -476,12 +480,13 @@ img{
         font-size: 32px !important;
         text-align: center;
         padding: 12px 25px;
-        border-radius: 5px;
-        font-family: 'Open Sans', sans-serif
+        border-radius: 70px;
+        font-family: 'Open Sans', sans-serif;
+        background: #ffffff;
     }
 
     .modelTextAlign {
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Open Sans', sans-serif; cursor: pointer; border-radius: 70px; background: #ffffff;
     }
 
     .chevronIconAlign {
@@ -733,7 +738,7 @@ img{
         color: #fff;
         font-size: 27px;
         padding: 12px 25px;
-        border-radius: 5px;
+        border-radius: 18px 18px 0px 0px;
         line-height: normal;
         text-align: center;
     }
@@ -744,12 +749,13 @@ img{
         font-size: 32px !important;
         text-align: center;
         padding: 12px 25px;
-        border-radius: 5px;
-        font-family: 'Open Sans', sans-serif
+        border-radius: 30px;
+        font-family: 'Open Sans', sans-serif;
+        background: #ffffff;
     }
 
     .modelTextAlign {
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Open Sans', sans-serif; cursor: pointer; border-radius: 70px; background: #ffffff;
     }
 
     .chevronIconAlign {
@@ -770,6 +776,10 @@ img{
     .mt-10 {
         margin-top: 10%;
     }
+
+    .read-toggle {
+        background: white;
+    }
 }
 
 @media (min-width: 651px) and (max-width: 767px) {
@@ -788,6 +798,10 @@ img{
 
     .backgroundChange {
         background: #E9F7FC;
+    }
+
+    .read-toggle {
+        background: white;
     }
 
     .documentationButton {
@@ -1002,7 +1016,7 @@ img{
         color: #fff;
         font-size: 27px;
         padding: 12px 25px;
-        border-radius: 5px;
+        border-radius: 18px 18px 0px 0px;
         line-height: normal;
         text-align: center;
     }
@@ -1013,12 +1027,13 @@ img{
         font-size: 32px !important;
         text-align: center;
         padding: 12px 25px;
-        border-radius: 5px;
-        font-family: 'Open Sans', sans-serif
+        border-radius: 30px;
+        font-family: 'Open Sans', sans-serif;
+        background: #ffffff;
     }
 
     .modelTextAlign {
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Open Sans', sans-serif; cursor: pointer; border-radius: 70px; background: #ffffff;
     }
 
     .chevronIconAlign {
@@ -1051,6 +1066,14 @@ img{
         display: block;
         cursor: pointer;
         margin-left: 35%;
+    }
+
+    .mt-5 {
+        margin-top: 5%;
+    }
+
+    .read-toggle {
+        background: linear-gradient(0deg, rgba(8, 167, 222, 0.09) 100%, #ffffff 100%);
     }
 
     .documentationButton {
@@ -1285,7 +1308,7 @@ img{
         color: #fff;
         font-size: 24px;
         padding: 12px 25px;
-        border-radius: 5px;
+        border-radius: 18px 18px 0px 0px;
         font-stretch: normal;
         line-height: normal;
     }
@@ -1294,14 +1317,15 @@ img{
         color: black;
         font-size: 32px;
         padding: 12px 25px;
-        border-radius: 5px;
+        border-radius: 30px;
         font-stretch: normal;
         line-height: normal;
-        font-family: 'Open Sans', sans-serif
+        font-family: 'Open Sans', sans-serif;
+        background: #E9F7FC;
     }
 
     .modelTextAlign {
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Open Sans', sans-serif; cursor: pointer; border-radius: 70px; background: #E9F7FC;
     }
 
     .chevronIconAlign {
@@ -1330,6 +1354,14 @@ img{
         border: 0;
         display: block;
         cursor: pointer;
+    }
+
+    .mt-5 {
+        margin-top: 5%;
+    }
+
+    .read-toggle {
+        background: linear-gradient(0deg, rgba(8, 167, 222, 0.09) 100%, #ffffff 100%);
     }
 
     .documentationButton {
@@ -1564,7 +1596,7 @@ img{
         color: #fff;
         font-size: 24px;
         padding: 12px 25px;
-        border-radius: 5px;
+        border-radius: 18px 18px 0px 0px;
         font-stretch: normal;
         line-height: normal;
     }
@@ -1573,14 +1605,15 @@ img{
         color: black;
         font-size: 32px;
         padding: 12px 25px;
-        border-radius: 5px;
+        border-radius: 30px;
         font-stretch: normal;
         line-height: normal;
-        font-family: 'Open Sans', sans-serif
+        font-family: 'Open Sans', sans-serif;
+        background: #E9F7FC;
     }
 
     .modelTextAlign {
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Open Sans', sans-serif; cursor: pointer; border-radius: 70px; background: #E9F7FC;
     }
 
     .chevronIconAlign {
@@ -1611,6 +1644,13 @@ img{
         cursor: pointer;
     }
 
+    .mt-5 {
+        margin-top: 5%;
+    }
+
+    .read-toggle {
+        background: linear-gradient(0deg, rgba(8, 167, 222, 0.09) 100%, #ffffff 100%);
+    }
     .documentationButton {
         position: absolute;
         display: inline-block;
@@ -1844,7 +1884,7 @@ img{
         color: #fff;
         font-size: 24px;
         padding: 12px 25px;
-        border-radius: 5px;
+        border-radius: 18px 18px 0px 0px;
         font-stretch: normal;
         line-height: normal;
     }
@@ -1853,14 +1893,15 @@ img{
         color: black;
         font-size: 32px;
         padding: 12px 25px;
-        border-radius: 5px;
+        border-radius: 30px;
         font-stretch: normal;
         line-height: normal;
-        font-family: 'Open Sans', sans-serif
+        font-family: 'Open Sans', sans-serif;
+        background: #E9F7FC;
     }
 
     .modelTextAlign {
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Open Sans', sans-serif; cursor: pointer; border-radius: 70px; background: #E9F7FC;
     }
 
     .chevronIconAlign {

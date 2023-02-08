@@ -278,13 +278,13 @@
             <div class="container"><img src="Decoration.png" class="decorationImageAlign"/></div>
         </div>
 
-        <div class="col-sm-6 choose-us">
+        <div class="col-sm-6 choose-us mt-10">
             <div class="wrap">
                 <ul class="mAccord">
                     <li>
                         <div class="maTrigger modelTextAlign">
                             Moqui Framework
-                            <i class="fa fa-chevron-down chevronIconAlign"></i>
+                            <i class="glyphicon glyphicon-plus-sign chevronIconAlign"></i>
                         </div>
                         <div class="maContent">
                             <div class="full" style="color: black">
@@ -296,10 +296,10 @@
                             </div>
                         </div>
                     </li>
-                    <li>
-                        <div class="maTrigger">
+                    <li class="mt-5">
+                        <div class="maTrigger modelTextAlign">
                             Tool Components
-                            <i class="fa fa-chevron-down codeReviewChevronAlign"></i>
+                            <i class="glyphicon glyphicon-plus-sign codeReviewChevronAlign"></i>
                         </div>
                         <div class="maContent">
                             <div class="full" style="color: black;">
@@ -317,10 +317,10 @@
                             </div>
                         </div>
                     </li>
-                    <li>
-                        <div class="maTrigger">
+                    <li class="mt-5">
+                        <div class="maTrigger modelTextAlign">
                             Business Artifact Components
-                            <i class="fa fa-chevron-down benefitsChevronAlign"></i>
+                            <i class="glyphicon glyphicon-plus-sign benefitsChevronAlign"></i>
                         </div>
                         <div class="maContent">
                             <div class="full" style="color: black;">
@@ -337,10 +337,10 @@
                             </div>
                         </div>
                     </li>
-                    <li>
-                        <div class="maTrigger">
+                    <li class="mt-5">
+                        <div class="maTrigger modelTextAlign">
                             Applications
-                            <i class="fa fa-chevron-down benefitsChevronAlign"></i>
+                            <i class="glyphicon glyphicon-plus-sign benefitsChevronAlign"></i>
                         </div>
                         <div class="maContent">
                             <div class="full" style="color: black;">
@@ -353,11 +353,10 @@
                             </div>
                         </div>
                     </li>
-
-                    <li>
-                        <div class="maTrigger">
+                    <li class="mt-5">
+                        <div class="maTrigger modelTextAlign">
                             Making Apps with Moqui (Book)
-                            <i class="fa fa-chevron-down benefitsChevronAlign"></i>
+                            <i class="glyphicon glyphicon-plus-sign benefitsChevronAlign"></i>
                         </div>
                         <div class="maContent">
                             <div class="full" style="color: black;">
@@ -369,7 +368,6 @@
                             </div>
                         </div>
                     </li>
-
                 </ul>
                 <div class="push"></div>
             </div>
@@ -377,8 +375,9 @@
 
         <div class="col-sm-6 choose-us">
             <div class="row read-more-less" data-id="100">
-                <div class="col-sm-12 read-toggle" data-id='0' style="margin-top: 5%">
-                    <div class="accordion_head">Open Source License</div>
+                <div class="accordion_head">Open Source License</div>
+                <div class="col-sm-12 read-toggle" data-id='0' style="font-size: 18px;  border-radius: 0px 0px 18px 18px;">
+
                     Moqui is free and open source software, released in the public domain.
                     <p class="accordion_body-p">To firmly establish this and to clarify terms in jurisdictions where public domain status is not recognized,
                         Moqui uses the <a href="http://creativecommons.org/publicdomain/zero/1.0/">Creative Commons CC0 1.0 Universal Public Domain Dedication</a>.</p>
@@ -388,14 +387,14 @@
                 </div>
             </div>
 
-            <h2 class="section-title resourceModelTextAlign">Resource Model</h2>
+            <h2 class="section-title resourceModelTextAlign" style="border-radius: 70px; background: #E9F7FC; margin-bottom: 0px;">Resource Model</h2>
 
             <div class="wrap">
                 <ul class="mAccord">
-                    <li>
+                    <li class="mt-5">
                         <div class="maTrigger modelTextAlign">
                             Model
-                            <i class="fa fa-chevron-down chevronIconAlign"></i>
+                            <i class="glyphicon glyphicon-plus-sign chevronIconAlign"></i>
                         </div>
                         <div class="maContent">
                             <div class="full" style="color: black">
@@ -413,10 +412,10 @@
                             </div>
                         </div>
                     </li>
-                    <li>
-                        <div class="maTrigger">
+                    <li class="mt-5">
+                        <div class="maTrigger modelTextAlign">
                             Code Review
-                            <i class="fa fa-chevron-down codeReviewChevronAlign"></i>
+                            <i class="glyphicon glyphicon-plus-sign codeReviewChevronAlign"></i>
                         </div>
                         <div class="maContent">
                             <div class="full" style="color: black;">
@@ -428,10 +427,10 @@
                             </div>
                         </div>
                     </li>
-                    <li>
-                        <div class="maTrigger">
+                    <li class="mt-5">
+                        <div class="maTrigger modelTextAlign">
                             Benefits
-                            <i class="fa fa-chevron-down benefitsChevronAlign"></i>
+                            <i class="glyphicon glyphicon-plus-sign benefitsChevronAlign"></i>
                         </div>
                         <div class="maContent">
                             <div class="full" style="color: black;">
@@ -504,16 +503,16 @@
     $(document).ready( function () {
         var slider = $(".owl-carousel");
         slider.owlCarousel({
-            autoplay: false,
-            autoplayTimeout: 3000,
+            autoplay: true,
+            autoplayTimeout: 5000,
             autoplayHoverPause: false,
             items: 1,
-            stagePadding: 10,
+            stagePadding: 30,
             center: true,
             nav: false,
             margin: 0,
             dots: false,
-            loop: false,
+            loop: true,
             responsive: {
                 0: { items: 1 },
                 480: { items: 2 },

@@ -96,12 +96,12 @@
             </div>
             <div class="top-info">
                 <div class="container">
-                    <p class="top-info__text pull-left hidden-xs small">
-                        <a href="https://demo.moqui.org/qapps" target="_blank">Try the applications demo!</a>
-                        <a href="https://demo.moqui.org/store" target="_blank">Try POP Shop eCommerce!</a>
+                    <p class="top-info__text pull-left hidden-xs">
+                        <a href="https://demo.moqui.org/qapps" target="_blank" style="color: white;">Try the applications demo!</a>
+                        <a href="https://demo.moqui.org/store" target="_blank" style="color: white;">Try POP Shop eCommerce!</a>
                     </p>
-                    <p class="top-info__text pull-right small">
-                        Comments? Questions? Get Involved? <a href="/docs/moqui/Community+Guide" target="_blank">Community Guide</a>
+                    <p class="top-info__text pull-right" style="color: white;">
+                        Comments? Questions? Get Involved? <a href="/docs/moqui/Community+Guide" target="_blank" style="color: white;">Community Guide</a>
                     </p>
                 </div>
             </div>
