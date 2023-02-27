@@ -6,12 +6,12 @@ h3 { margin-top: 20px; }
 
 .presentation { height: 106px; background: #212c43; }
 .main-nav { height: 73px; }
-.top-info { height: 36px; border-top: black solid 1px; }
+.top-info { height: 36px; border-top: black solid 1px; font-size: 20px; }
 .logo { padding-top: 16px; }
 .logo-img { margin-bottom: 20px; }
-ul#navigation > li > a { padding: 23px 15px 21px; }
-ul#navigation a:hover, ul#navigation .active-item > a { color: #44b6fd; }
-#navigation { padding-top: 5px; }
+ul#navigation > li > a { padding: 23px 15px 21px; font-size: 20px; }
+ul#navigation a:hover, ul#navigation .active-item > a { color: #44b6fd; font-size: 20px; }
+#navigation { padding-top: 5px; font-size: 20px;  }
 
 @media (min-width: 768px) { ul#navigation > li:hover > ul { top: 70px; background: rgba(33, 44, 67, 0.9); } }
 #navigation-toggle { margin-top: 8px; }
@@ -33,9 +33,9 @@ ul#navigation a:hover, ul#navigation .active-item > a { color: #44b6fd; }
 .divider-circle--light { margin-top: 29px; }
 
 /* better handle moqui logo image */
-.moqui-logo { margin-top: 0px; height: 40px; }
+.moqui-logo { margin-top: 0px; height: 45px; }
 @media (min-width: 768px) {
-  .presentation { height: 36px; background: #212c43; }
+  .presentation { height: 45px; background: #212c43; }
   .main-nav.fixed-pos { top: 0px; position: absolute;}
   .top-info { margin-top: 72px; }
   .circle-info__title { font-size: 26px; }
