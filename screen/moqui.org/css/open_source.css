@@ -1924,6 +1924,7 @@ img{
 
 .owl-carousel .owl-item {
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
     margin-top: 1%;
 }
 
