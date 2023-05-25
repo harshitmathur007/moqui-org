@@ -4,7 +4,7 @@ h3 { margin-top: 20px; }
 .basic_html li { margin-left: 20px; }
 .basic_html th, .basic_html td { padding: 2px 8px; border: #dddddf solid thin; }
 
-.presentation { height: 106px; background: #212c43; }
+.presentation { height: 120px; background: #212c43; }
 .main-nav { height: 73px; }
 .top-info { height: 36px; border-top: black solid 1px; font-size: 20px; }
 .logo { padding-top: 16px; }
@@ -36,10 +36,63 @@ ul#navigation a:hover, ul#navigation .active-item > a { color: #44b6fd; font-siz
 .moqui-logo { margin-top: 0px; height: 45px; }
 @media (min-width: 768px) {
   .presentation { height: 45px; background: #212c43; }
-  .main-nav.fixed-pos { top: 0px; position: absolute;}
+  .main-nav.fixed-pos { top: 0px; position: fixed;}
   .top-info { margin-top: 72px; }
   .circle-info__title { font-size: 26px; }
   .circle-button__title { font-size: 26px; }
+  .banner-design {
+    /*box-shadow: 2px 1px 8px 7px #08a7de7a; border-radius: 24px; */
+  }
+
+  #box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  .gradient-border {
+    --borderWidth: 5px;
+    background: white;
+    position: relative;
+    border-radius: var(--borderWidth);
+  }
+  .gradient-border:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+  }
+
+  @keyframes animatedgradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
+@media (max-width: 506px) {
+  .presentation { height: 147px !important; }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .top-info {
+    font-size: 15px;
+  }
+
+  ul#navigation > li > a { padding: 23px 15px 21px; font-size: 15px; }
+  ul#navigation a:hover, ul#navigation .active-item > a { color: #44b6fd; font-size: 15px; }
 }
 
 .promobox { background-image: none; }
